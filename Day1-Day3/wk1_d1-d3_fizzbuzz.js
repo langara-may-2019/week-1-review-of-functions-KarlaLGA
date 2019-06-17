@@ -19,6 +19,11 @@
 
 const fizzBuzz = () => { //  <------- ES6 Arrow functions
     for (var num = 1; num <= 100; num++) {
+
+        if (num % 5 === 0 && num % 3 === 0) {
+            console.log('FizzBuzz');
+        continue;
+        }   
         if (num % 3 ===0) {
             console.log('Fizz');
             continue;
@@ -28,17 +33,20 @@ const fizzBuzz = () => { //  <------- ES6 Arrow functions
             continue;
         }
         console.log(num);
-
     }
 }
 
-fizzBuzz;
+fizzBuzz();
 
 // 2. Create a function fizzBuzzTwo, that takes in two numbers, and does the FizzBuzz to those values. For example, 8 and 9, instead of 3 and 5. 
 
 const fizzBuzzTwo = (F,B) => {
     for (var num = 1; num <= 100; num++) {
-        if (num % F ===0) {
+        if (num % F === 0 && num % B === 0) {
+            console.log('FizzBuzz');
+        continue;
+        }   
+        else if (num % F ===0) {
             console.log('Fizz');
             continue;
         }
@@ -58,6 +66,6 @@ fizzBuzzTwo(8,9);
 
 const fizzBuzzSum = (/* two parameters here */) => {
 
-    // Your code here...
-
 }
+
+fizzBuzzSum();
