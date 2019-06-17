@@ -32,13 +32,27 @@ const fizzBuzz = () => { //  <------- ES6 Arrow functions
     }
 }
 
+fizzBuzz;
+
 // 2. Create a function fizzBuzzTwo, that takes in two numbers, and does the FizzBuzz to those values. For example, 8 and 9, instead of 3 and 5. 
 
-const fizzBuzzTwo = (/* two parameters */) => {
+const fizzBuzzTwo = (F,B) => {
+    for (var num = 1; num <= 100; num++) {
+        if (num % F ===0) {
+            console.log('Fizz');
+            continue;
+        }
+        else if (num % B ===0) {
+            console.log('Buzz');
+            continue;
+        }
+        console.log(num);
 
+    }
     //Your code here...
 }
 
+fizzBuzzTwo(8,9);
 
 // 3. Create a function fizzBuzzSum, which has two parameters, and returns the sum of the numbers that are not “Fizz”, “Buzz” and “FizzBuzz”.
 
