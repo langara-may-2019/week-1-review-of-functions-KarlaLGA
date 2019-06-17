@@ -18,8 +18,18 @@
 // Please use ES6 conventions to write functions 👇👇👇
 
 const fizzBuzz = () => { //  <------- ES6 Arrow functions
+    for (var num = 1; num <= 100; num++) {
+        if (num % 3 ===0) {
+            console.log('Fizz');
+            continue;
+        }
+        else if (num % 5 ===0) {
+            console.log('Buzz');
+            continue;
+        }
+        console.log(num);
 
-    //Your code here...
+    }
 }
 
 // 2. Create a function fizzBuzzTwo, that takes in two numbers, and does the FizzBuzz to those values. For example, 8 and 9, instead of 3 and 5. 
