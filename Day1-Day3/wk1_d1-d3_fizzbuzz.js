@@ -65,8 +65,10 @@ fizzBuzzTwo(8,9);
 // 3. Create a function fizzBuzzSum, which has two parameters, and returns the sum of the numbers that are not “Fizz”, “Buzz” and “FizzBuzz”.
 
 const fizzBuzzSum = (F, B) => {
+    //the only thing I would add would be to make a global sum variable, and then return it at the end:
+    let suma;
     for (var num = 1; num <=20; num++){
-        let suma = num;
+        suma = num;
         if (num % F === 0 && num % B ===0){
             continue;
         }
@@ -78,7 +80,8 @@ const fizzBuzzSum = (F, B) => {
         } 
         suma= suma +num;   
     }
-
+    //and return it down here:
+    return suma
 }
 
 fizzBuzzSum(3,5);
